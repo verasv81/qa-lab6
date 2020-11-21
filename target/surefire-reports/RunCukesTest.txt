@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: RunCukesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.44 sec <<< FAILURE!
+Search Icon Positioning(Search feature)  Time elapsed: 6.182 sec  <<< ERROR!
+java.lang.Error: Not centered!
+	at stepdefs.SearchDefinitions.the_search_icon_should_be_centered_horizontally_and_vertically(SearchDefinitions.java:36)
+	at ✽.the search icon should be centered horizontally and vertically(src/test/resource/search.feature:6)
+
