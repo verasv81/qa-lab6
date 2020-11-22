@@ -1,6 +1,6 @@
 Feature: Search feature
 
-  Scenario: Search Icon Positioning
-    Given I am on Home Page
-    When I check search input from navbar
-    Then the search icon should be centered horizontally and vertically
+  Scenario: Search Functionality
+    Given I am on Womens Page
+    When I search for "Skirt"
+    Then the result should be list of products matching search

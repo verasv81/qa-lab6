@@ -1,17 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 2, Skipped: 1, Time elapsed: 23.62 sec <<< FAILURE!
-Phone Link(Phone feature)  Time elapsed: 6.016 sec  <<< ERROR!
-org.openqa.selenium.NotFoundException: Element not found
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 20.708 sec <<< FAILURE!
+Cart Functionality(Cart feature)  Time elapsed: 7.734 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at stepdefs.CartDefinitions.i_add_to_cart_a_product_and_edit_quantity(CartDefinitions.java:26)
+	at ✽.I add to cart a product and edit quantity(src/test/resource/cart.feature:5)
+
+Search Functionality(Search feature)  Time elapsed: 6.693 sec  <<< ERROR!
+org.openqa.selenium.NotFoundException: Page not found!
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Veras-MacBook-Pro.local', ip: 'fe80:0:0:0:10a0:f1f0:ac1a:9c07%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '15.0.1'
 Driver info: driver.version: unknown
-	at stepdefs.PhoneDefinitions.phone_number_is_called(PhoneDefinitions.java:40)
-	at ✽.phone number is called(src/test/resource/phone.feature:6)
-
-Search Icon Positioning(Search feature)  Time elapsed: 9.354 sec  <<< ERROR!
-java.lang.Error: Not centered!
-	at stepdefs.SearchDefinitions.the_search_icon_should_be_centered_horizontally_and_vertically(SearchDefinitions.java:35)
-	at ✽.the search icon should be centered horizontally and vertically(src/test/resource/search.feature:6)
+	at stepdefs.SearchDefinitions.the_result_should_be_list_of_products_matching_search(SearchDefinitions.java:42)
+	at ✽.the result should be list of products matching search(src/test/resource/search.feature:6)
 
