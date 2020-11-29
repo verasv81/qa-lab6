@@ -1,3 +1,2 @@
 RunCukesTest.class
-stepdefs/FilterDefinitions.class
-stepdefs/SearchDefinitions.class
+stepdefs/GoogleDefinitions.class
